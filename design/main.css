@@ -1,0 +1,245 @@
+body {
+  background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+}
+
+.headertext{
+  color: blue;
+  background-color: #09fb09;
+  font-size: 38px;
+  border: 3px solid yellow;
+  border-radius: 4px;
+  margin-top:-10px;
+  margin-left: -8px;
+  margin-right:-1.px;
+}
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.confession-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.confession-btn:hover {
+    background-color: #218838;
+}
+
+/* Popup Form */
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.form-popup form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Confessions */
+.confessions {
+    margin-top: 30px;
+    padding: 10px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.confession-box {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease;
+}
+
+.confession-box p {
+    font-size: 16px;
+    color: #333;
+}
+
+.confession-box .timestamp {
+    font-size: 14px;
+    color: #888;
+    text-align: right;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Confession Box Styles */
+.confessionBox {
+  background-color: #67fd49;
+  border: 1px solid #fb4141;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0;
+  position: relative;
+  transition: transform 0.3s ease;
+    width: 450px;
+}
+
+
+
+.confessionBox .heart-react {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: red;
+  cursor: pointer;
+}
+
+/* Heart Reaction Animation */
+.heart-react:hover {
+  animation: pulse 0.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+h2{
+color: blue;
+}
+
+h3 {
+color: deeppink;
+}
